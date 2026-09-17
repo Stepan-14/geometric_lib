@@ -2,14 +2,14 @@
 
 ## Подключение
 В файле, в котором планируется использовать решение, необходимо **явно** прописать использование нужных или всех решений в виде: 
-```
+```python
 import circle
 import rectangle
 import square
 import triangle
 ```
 Или в виде:
-```
+```python
 from circle import function_name
 from rectangle import function_name
 from square import function_name
@@ -20,7 +20,7 @@ from triangle import function_name
 
 ## Использование и вызов функций
 Для вызова функции необходимо **явно** указать, из какого файла решения вызывается функция и название самой функции, разделяя эти значения точкой. В круглые скобки передать **валидные** аргументы. Пример:
-```
+```python
 # your code
 
 a = rectangle.area(a, b)
@@ -42,7 +42,7 @@ a = rectangle.area(a, b)
 > Функции возвращают значения, соответствующие названиям: area - площадь фигуры, perimetr - периметр фигуры.
 
 ## Примеры вызова функций
-```
+```python
 circleArea = circle.area(2)
 circlePerimetr = circle.perimetr(3)
 
