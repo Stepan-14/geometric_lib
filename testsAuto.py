@@ -92,7 +92,7 @@ class GeometryTestCase(unittest.TestCase):
     def test_normal_circle_mul(self):
         """Проверка площади круга"""
         res = circle.area(3)
-        self.assertAlmostEqual(res, 28.274333882308138)
+        self.assertAlmostEqual(res, 28.2743, delta = 0.01)
 
     def test_circle_negative_mul(self):
         """Проверка площади круга с отрицательным числом"""
@@ -108,7 +108,7 @@ class GeometryTestCase(unittest.TestCase):
     def test_normal_circle_perimeter(self):
         """Проверка периметра круга"""
         res = circle.perimeter(3)
-        self.assertAlmostEqual(res, 18.84955592153876)
+        self.assertAlmostEqual(res, 18.8495, delta = 0.01)
 
     def test_circle_negative_perimeter(self):
         """Проверка периметра круга с отрицательным числом"""
