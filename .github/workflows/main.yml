@@ -1,0 +1,32 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches:
+      - '**' # Запуск при пуше в любую ветку
+  pull_request:
+    branches: '**'
+
+jobs:
+  test:
+    name: Run tests on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest] # Запуск на двух ОС по заданию
+
+    steps:
+      # Шаг 1: Скачиваем код репозитория внутрь виртуальной машины
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Шаг 2: Устанавливаем Python на раннер
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # Можно указать нужную вам версию
+
+      # Шаг 3: Запуск вашего файла с тестами
+      - name: Run test.py
+        run: |
+          python testsAuto.py
