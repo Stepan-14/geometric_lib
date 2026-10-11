@@ -27,4 +27,4 @@ jobs:
       # Шаг 3: Запуск вашего файла с тестами
       - name: Run test.py
         run: |
-          python -u testsAuto.py
+          python -u testsAuto.py -v
