@@ -16,7 +16,7 @@ jobs:
     steps:
       # Скачиваем код репозитория внутрь виртуальной машины
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Устанавливаем Python на раннер
       - name: Set up Python
