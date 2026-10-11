@@ -10,7 +10,7 @@ class GeometryTestCase(unittest.TestCase):
       # area
     def test_rectangle_zero_mul(self):
         """Проверка площади прямоугольника, если одна сторона равна 0"""
-        res = rectangle.area(10, 10)
+        res = rectangle.area(10, 0)
         self.assertEqual(res, 0)
 
     def test_rectangle_square_mul(self):
