@@ -143,11 +143,6 @@ class GeometryTestCase(unittest.TestCase):
         res = triangle.perimeter(3, 4, 5)
         self.assertEqual(res, 12)
 
-    def test_normal_triangle_perimeter(self):
-        """Проверка периметра треугольника"""
-        res = triangle.perimeter(3, 4, 5)
-        self.assertEqual(res, 120)
-
     def test_triangle_negative_perimeter(self):
         """Проверка периметра треугольника с отрицательным числом"""
         res = triangle.perimeter(-3, 4, 5)
